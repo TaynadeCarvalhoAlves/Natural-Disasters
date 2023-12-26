@@ -1,32 +1,17 @@
-﻿using Natural_Disasters_Web_Api.Domain.Entities;
+﻿using Dapper;
+using Natural_Disasters_Web_Api.Domain.Entities;
 using Natural_Disasters_Web_Api.Domain.Interfaces;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace Natural_Disasters_Web_Api.Domain.Services
 {
-    public class UserService : IUserRepository
+    public class UserService
     {
-        private readonly IUserRepository _userRepository;
-        public UserService(UserService _UserService)
-        {
-            _userRepository = _UserService;
-        }
 
-
-        void IUserRepository.AddUser(User User)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void DeleteUser(User User)
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<User> GetAll()
-        {
-            throw new NotImplementedException();
-        }
-
-      
     }
+      
+     
+ 
+    
 }
